@@ -1,7 +1,7 @@
 # GIT-HARD---RESET
 
 ## 👥 Team Members
-- **Paras Kumbhar**: Your Name
+- **Team Leader**: Paras Kumbhar
 - Member 2: Sneha Nair
 - Member 3: Tushar Patil
 - Member 4: Atharva Sawant
