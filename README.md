@@ -23,11 +23,11 @@ This project aims to combat fake reviews on e-commerce platforms using machine l
 ...
 
 ## 📈 Expected Features
--Review Analysis: Automatically analyzes Amazon product reviews using a trained ML model.
--Genuine vs Suspicious Detection: Flags suspicious reviews based on duplication, timing, sentiment, and other patterns.
--Chrome Extension Support: Provides seamless integration with Amazon through a browser extension.
--Backend Processing: Fetches reviews via Amazon API and handles ML classification on the server side.
--Reason Tagging: Displays short reasons for why a review was flagged (e.g., "duplicate text", "sudden spike in reviews").
+- **Review Analysis**: Automatically analyzes Amazon product reviews using a trained ML model.  
+- **Genuine vs Suspicious Detection**: Flags suspicious reviews based on duplication, timing, sentiment, and other patterns.  
+- **Chrome Extension Support**: Provides seamless integration with Amazon through a browser extension.  
+- **Backend Processing**: Fetches reviews via Amazon API and handles ML classification on the server side.  
+- **Reason Tagging**: Displays short reasons for why a review was flagged (e.g., "duplicate text", "sudden spike in reviews").  
 
 ## 📎 Collaborator Added
 ✅ `kleos3-raitacm` added as a collaborator
