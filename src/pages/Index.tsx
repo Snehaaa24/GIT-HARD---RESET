@@ -42,7 +42,7 @@ const Index = () => {
 
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchData = async () => { //huinjinhhhjbhbh
       const { data: productData } = await supabase.from('products').select('*');
       const { data: reviewData } = await supabase.from('reviews').select('*');
       const { data: suspiciousData } = await supabase
