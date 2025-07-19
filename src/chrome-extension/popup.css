@@ -1,0 +1,114 @@
+:root {
+    --genuine-color: #2a9d8f;
+    --suspicious-color: #e76f51;
+    --neutral-color: #6c757d;
+    --background: #f8f9fa;
+    --text-primary: #212529;
+    --border-color: #dee2e6;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: var(--background);
+    color: var(--text-primary);
+    margin: 0;
+    width: 380px;
+}
+
+.container {
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+}
+
+header p {
+    font-size: 14px;
+    color: var(--neutral-color);
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background-color: var(--card-bg);
+    font-size: 14px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--genuine-color);
+    box-shadow: 0 0 0 2px rgba(42, 157, 143, 0.2);
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--genuine-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #258a7e;
+}
+
+button:disabled {
+    background-color: var(--neutral-color);
+    cursor: not-allowed;
+}
+
+.result-container {
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid;
+}
+
+.result-container.suspicious {
+    background-color: #fdf0ed;
+    border-color: var(--suspicious-color);
+}
+
+.result-container.genuine {
+    background-color: #edf8f7;
+    border-color: var(--genuine-color);
+}
+
+.result-container h2 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+}
+
+.result-container.suspicious h2 { color: var(--suspicious-color); }
+.result-container.genuine h2 { color: var(--genuine-color); }
+
+.result-container p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-primary);
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Manual Checker</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Review Checker</h1>
+            <p>Paste a review below to check for AI-generated text.</p>
+        </header>
+
+        <main>
+            <textarea id="review-input" placeholder="Enter review text here..."></textarea>
+            <button id="analyze-button">Analyze Text</button>
+
+            <div id="result-container" class="result-container" style="display: none;">
+                <h2 id="result-classification"></h2>
+                <p id="result-reason"></p>
+            </div>
+        </main>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

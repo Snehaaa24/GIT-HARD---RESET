@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Kleos Trust Analysis",
+  "version": "1.0",
+  "description": "Analyzes product reviews for authenticity.",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:5001/"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
