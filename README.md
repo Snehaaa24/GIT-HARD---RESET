@@ -1,10 +1,10 @@
 # TeamName
 
 ## 👥 Team Members
-- **Team Leader**: Your Name
-- Member 2: Name
-- Member 3: Name
-- Member 4: Name
+- **Team Leader**: Paras Kumbhar
+- Member 2: Sneha Nair
+- Member 3: Tushar Patil
+- Member 4: Atharva Sawant
 
 ## 🧠 Domain
 Artificial Intelligence / Machine Learning (AIML)
