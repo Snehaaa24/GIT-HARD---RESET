@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle (light gray) -->
+  <circle cx="100" cy="100" r="80" fill="#f5f5f5" />
+  
+  <!-- Blue segment (52%) -->
+  <path d="M100 20 A80 80 0 0 1 180 100 L100 100 Z" fill="#3b82f6" />
+  
+  <!-- Yellow segment (24%) -->
+  <path d="M100 100 A80 80 0 0 1 47.4 31.4 L100 100 Z" fill="#f59e0b" />
+  
+  <!-- Gray segment (24%) -->
+  <path d="M100 100 A80 80 0 0 1 20 100 L100 100 Z" fill="#e5e7eb" />
+  
+  <!-- Inner circle (white) -->
+  <circle cx="100" cy="100" r="50" fill="white" stroke="#f8f8f8" stroke-width="2" />
+  
+  <!-- Outer ring (transparent) -->
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#e5e7eb" stroke-width="1" />
+  
+  <!-- Decorative dots -->
+  <circle cx="100" cy="20" r="3" fill="#3b82f6" />
+  <circle cx="180" cy="100" r="3" fill="#3b82f6" />
+  <circle cx="47.4" cy="31.4" r="3" fill="#f59e0b" />
+  <circle cx="20" cy="100" r="3" fill="#e5e7eb" />
+  
+  <!-- Subtle gradient overlay for depth -->
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(100 100) rotate(90) scale(80)">
+      <stop stop-color="white" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="80" fill="url(#paint0_radial)" />
+</svg>

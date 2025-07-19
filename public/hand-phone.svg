@@ -1,0 +1,48 @@
+<svg width="300" height="400" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hand holding phone - base shape -->
+  <path d="M80 150 C60 170 50 200 60 230 C70 260 90 270 110 260 C120 255 125 250 130 240 L120 230 C115 240 110 245 100 245 C85 245 75 230 80 210 C85 190 90 180 100 170 L80 150 Z" fill="#f8d0a0" stroke="#e0c090" stroke-width="1" />
+  <path d="M170 200 C190 210 200 230 190 260 C180 290 160 300 140 290 C130 285 125 280 120 270 L130 260 C135 270 140 275 150 275 C165 275 175 260 170 240 C165 220 160 210 150 200 L170 200 Z" fill="#f8d0a0" stroke="#e0c090" stroke-width="1" />
+  
+  <!-- Hand details -->
+  <path d="M85 160 C75 175 70 190 72 210" stroke="#e0c090" stroke-width="1" fill="none" />
+  <path d="M165 210 C175 225 178 240 172 260" stroke="#e0c090" stroke-width="1" fill="none" />
+  <path d="M100 245 C105 242 108 238 110 232" stroke="#e0c090" stroke-width="1" fill="none" />
+  <path d="M150 275 C145 272 142 268 140 262" stroke="#e0c090" stroke-width="1" fill="none" />
+  
+  <!-- Phone outline with shadow effect -->
+  <rect x="100" y="50" width="100" height="200" rx="15" fill="#000000" />
+  <rect x="102" y="52" width="96" height="196" rx="13" fill="#111111" />
+  <rect x="105" y="55" width="90" height="190" rx="12" fill="#ffffff" />
+  
+  <!-- Phone screen with subtle gradient -->
+  <defs>
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f8f8" />
+      <stop offset="100%" stop-color="#f0f0f0" />
+    </linearGradient>
+  </defs>
+  <rect x="110" y="65" width="80" height="170" rx="5" fill="url(#screenGradient)" />
+  
+  <!-- Screen content (more detailed) -->
+  <rect x="120" y="80" width="60" height="8" rx="2" fill="#e0e0e0" />
+  <rect x="120" y="95" width="60" height="8" rx="2" fill="#e0e0e0" />
+  <rect x="120" y="110" width="40" height="8" rx="2" fill="#e0e0e0" />
+  
+  <!-- App icon grid -->
+  <rect x="120" y="130" width="15" height="15" rx="3" fill="#00cc66" />
+  <rect x="142" y="130" width="15" height="15" rx="3" fill="#3b82f6" />
+  <rect x="164" y="130" width="15" height="15" rx="3" fill="#f59e0b" />
+  
+  <rect x="120" y="152" width="15" height="15" rx="3" fill="#ef4444" />
+  <rect x="142" y="152" width="15" height="15" rx="3" fill="#8b5cf6" />
+  <rect x="164" y="152" width="15" height="15" rx="3" fill="#10b981" />
+  
+  <!-- Bottom navigation bar -->
+  <rect x="120" y="210" width="60" height="10" rx="5" fill="#e0e0e0" />
+  
+  <!-- Phone button/notch -->
+  <rect x="140" y="58" width="20" height="3" rx="1.5" fill="#e0e0e0" />
+  
+  <!-- Reflection highlight -->
+  <rect x="115" y="70" width="2" height="160" rx="1" fill="#ffffff" opacity="0.5" />
+</svg>

@@ -80,7 +80,8 @@ const Index = () => {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to fetch or analyze the URL.');
+        const errorText = await response.text();
+        throw new Error(errorText || 'Failed to fetch or analyze the URL.');
       }
 
       const data = await response.json();
@@ -90,7 +91,7 @@ const Index = () => {
       
       setUrlAnalysis({ results: data.results, confidence: avgConfidence });
 
-    } catc  h (err) {
+    } catch (err) {
       console.error(err);
       setError({ ...error, url: 'Failed to analyze reviews from URL. Please check the URL and try again.' });
     } finally {
@@ -109,13 +110,19 @@ const Index = () => {
       // Using a more descriptive API endpoint name
       const response = await fetch('/api/analyzereview', {
         method: 'POST',
-        headers: { 'Content-Type': 'text/plain' },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ reviewText: reviewText.trim() }),
       }); 
 
       if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error || 'An unknown error occurred.');
+        // Try to parse error as JSON, but fall back to text if it fails
+        const errorText = await response.text();
+        try {
+          const errorJson = JSON.parse(errorText);
+          throw new Error(errorJson.error || 'An unknown error occurred.');
+        } catch (e) {
+          throw new Error(errorText || 'An unknown error occurred.');
+        }
       }
 
       const data = await response.json();
@@ -176,6 +183,12 @@ const Index = () => {
             <p className="text-muted-foreground text-lg">
               Monitor review authenticity and protect your brand reputation
             </p>
+            <button
+              onClick={() => window.open('https://huggingface.co/spaces/Hello-SimpleAI/chatgpt-detector-roberta', '_blank')}
+              className="mt-4 bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors"
+            >
+              Review using Deeplearning
+            </button>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
